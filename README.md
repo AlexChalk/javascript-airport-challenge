@@ -25,6 +25,7 @@ undefined
 undefined
 > airport.planes();
 []
+etc.
 ```
 
 ## Other notes
