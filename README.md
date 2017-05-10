@@ -11,20 +11,20 @@ Clone the repository: `git clone git@github.com:adc17/javascript-airport-challen
 Run tests by opening `SpecRunner.html` in your web browser—this also loads the code into your browser's console. Then interact with the project using the console, as follows:
 ```
 > plane = new Plane
-< Plane {}
+Plane {}
 > airport = new Airport
-< Airport {_hangar: Array(0), _weather: Weather}
+Airport {_hangar: Array(0), _weather: Weather}
 > plane.land(airport)
 Airport.js:14 Uncaught Error: Planes cannot land when weather is stormy
     etc...
 > plane.land(airport)
-< undefined
+undefined
 > airport.planes();
-< [Plane]
+[Plane]
 > plane.takeOff();
-< undefined
+undefined
 > airport.planes();
-< []
+[]
 ```
 
 ## Other notes
