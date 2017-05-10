@@ -20,8 +20,16 @@
     describe('#takeoff', function() {
       it("planes can be instructed to takeoff from an airport", function() {
         plane.land(airport);
-        plane.takeoff;
+        plane.takeOff();
         expect(airport.planes()).not.toContain(plane);
+      });
+
+      describe('weather is stormy', function() {
+	it("planes cannot take off", function() {
+	  plane.land(airport);
+	  spyOn(airport, 'isStormy').and.returnValue(true);
+	  expect(function(){ plane.takeOff(); }).toThrowError();
+	});
       });
     }); 
   });
