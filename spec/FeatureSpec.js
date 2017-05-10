@@ -25,13 +25,17 @@
       });
 
       describe('weather is stormy', function() {
-	it("planes cannot take off", function() {
-	  plane.land(airport);
-	  spyOn(airport, 'isStormy').and.returnValue(true);
-	  expect(function(){ plane.takeOff(); }).toThrowError();
-	});
-      });
-    }); 
-  });
+      	it("planes cannot take off", function() {
+      	  plane.land(airport);
+      	  spyOn(airport, 'isStormy').and.returnValue(true);
+      	  expect(function(){ plane.takeOff(); }).toThrowError();
+      	});
 
+        it("planes cannot land", function() {
+          spyOn(airport, 'isStormy').and.returnValue(true;)
+          expect(function(){ plane.land(); }).toThrowError();
+        });
+      });
+    });
+  });
 }());
