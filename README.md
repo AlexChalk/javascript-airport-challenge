@@ -8,7 +8,7 @@ A reimplementation of [this project](https://github.com/adc17/airport_challenge)
 
 ## Usage
 
-This project doesn't really do anything, it just maps the workings of a very simple airport. But you can run its testfiles by opening `SpecRunner.html` in your web browser.
+This project doesn't really do anything, it just maps the workings of a very simple airport. But you can run its test files by opening `SpecRunner.html` in your web browser.
 
 ## Other notes
 
