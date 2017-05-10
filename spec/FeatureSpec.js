@@ -15,6 +15,14 @@
 	expect(airport.planes()).toContain(plane);
       });
 
+    });
+
+    describe('#takeoff', function() {
+      it("planes can be instructed to takeoff from an airport", function() {
+        plane.land(airport);
+        plane.takeoff;
+        expect(airport.planes()).not.toContain(plane);
+      });
     }); 
   });
 

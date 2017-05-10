@@ -16,6 +16,14 @@
       });
     });
 
+    describe('#takeoff', function() {
+      it('can takeoff from an airport', function() {
+        plane.land(airport);
+        plane.takeoff(airport);
+        expect(airport.clearForTakeoff).toHabeBeenCalledWith(plane);
+      });
+    });
+
   });
 
 }());
